@@ -2,13 +2,14 @@
 
 {{ config(
     materialized="table",
-    schema = "compact-works-374801.fiap_fase04_curated_dataset"
+    schema = "compact-works-374801.fiap_fase04_curated_dataset",
+    cluster_by = "neighbourhood"
 ) }}
 
 with neighbourhood_normalized as (
     select
         REGEXP_REPLACE(NORMALIZE(upper(neighbourhood), NFD), r'\pM', '') as neighbourhood
-    from {{ source('fiap_fase04_raw','airbnb_neighbourhood') }}
+    from {{ source('bq_raw','airbnb_neighbourhood') }}
     order by neighbourhood
 
 )
