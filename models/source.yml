@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: fiap_fase04_raw
+    schema: compact-works-374801.fiap_fase04_raw_dataset
+    tables:
+      - name: airbnb_neighbourhood
