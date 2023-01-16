@@ -9,7 +9,7 @@
 with neighbourhood_normalized as (
     select
         REGEXP_REPLACE(NORMALIZE(upper(neighbourhood), NFD), r'\pM', '') as neighbourhood
-    from {{ source('bq_raw','airbnb_neighbourhood') }}
+    from `compact-works-374801.fiap_fase04_raw_dataset.airbnb_neighbourhood`
     order by neighbourhood
 
 )

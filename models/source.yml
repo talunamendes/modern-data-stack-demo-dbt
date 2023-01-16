@@ -1,8 +1,0 @@
-version: 2
-
-sources:
-  - name: bq_raw
-    database: compact-works-374801
-    schema: fiap_fase04_raw_dataset
-    tables:
-      - name: airbnb_neighbourhood
