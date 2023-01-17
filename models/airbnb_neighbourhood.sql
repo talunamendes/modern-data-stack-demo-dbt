@@ -2,7 +2,8 @@
 
 {{ config(
     materialized="table",
-    schema = "compact-works-374801.fiap_fase04_curated_dataset",
+    database = "compact-works-374801",
+    schema = "fiap_fase04_curated_dataset",
     cluster_by = "neighbourhood"
 ) }}
 
