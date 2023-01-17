@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: airbnb
+    database: compact-works-374801 # gcp-project
+    schema: fiap_fase04 # gcp-dataset
+    tables:
+      - name: raw_airbnb_neighbourhood
+        description: "Airbnb neighbourhoods (raw)."
+      - name: raw_airbnb_listing
+        description: "Airbnb listings (raw)."
+      - name: raw_airbnb_calendar
+        description: "Airbnb Calendar (raw)."
