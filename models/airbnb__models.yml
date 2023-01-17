@@ -1,8 +1,6 @@
 version: 2
 
 models:
-  - database: compact-works-374801 # gcp-project
-    dataset: fiap_fase04_curated # gcp-dataset
   - name: airbnb_neighbourhood
     description: "Airbnb Rio de Janeiro neighbourhoods"
     columns:
