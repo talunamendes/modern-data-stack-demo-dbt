@@ -22,9 +22,7 @@ SELECT
 	availability_365
 from {{ source('airbnb', 'raw_airbnb_listings') }}
 order by neighbourhood_cleansed
-
 )
-
 select * from listings_summary
 
 

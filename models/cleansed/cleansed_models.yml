@@ -56,7 +56,7 @@ models:
         tests:
           - not_null
           - relationships:
-            to: ref('airbnb_neighbourhood')
+            to: ref('cleansed_airbnb_neighbourhood')
             field: neighbourhood_name
   - name: cleansed_airbnb_calendar
     tests:
@@ -67,7 +67,7 @@ models:
         tests:
           - not null
           - relationships:
-            to: ref('airbnb_listing')
+            to: ref('cleansed_airbnb_listing')
             field: id
       - name: date
         tests:
