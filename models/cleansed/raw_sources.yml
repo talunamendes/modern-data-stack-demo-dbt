@@ -11,3 +11,5 @@ sources:
         description: "Airbnb listings (raw)."
       - name: raw_airbnb_calendar
         description: "Airbnb Calendar (raw)."
+      - name: raw_covid
+        description: "Covid-19 (raw)."

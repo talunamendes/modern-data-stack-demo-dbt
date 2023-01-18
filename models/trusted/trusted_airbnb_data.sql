@@ -7,13 +7,7 @@
 with airbnb as (
 select
     lis.id,
-	lis.host_id,
-	lis.host_since,
 	lis.neighbourhood,
-	lis.latitude ,
-	lis.longitude ,
-	lis.room_type,
-	cal.price,
 	cal.available,
     cal.date
 from {{ ref('cleansed_airbnb_listing') }} lis
